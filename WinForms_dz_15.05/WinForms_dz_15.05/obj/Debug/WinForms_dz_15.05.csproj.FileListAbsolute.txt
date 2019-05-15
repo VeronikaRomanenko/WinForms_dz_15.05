@@ -1,0 +1,11 @@
+D:\С.РПО.18.2 Романенко Вероника\WinForms\WinForms_dz_15.05\WinForms_dz_15.05\WinForms_dz_15.05\bin\Debug\WinForms_dz_15.05.exe.config
+D:\С.РПО.18.2 Романенко Вероника\WinForms\WinForms_dz_15.05\WinForms_dz_15.05\WinForms_dz_15.05\bin\Debug\WinForms_dz_15.05.exe
+D:\С.РПО.18.2 Романенко Вероника\WinForms\WinForms_dz_15.05\WinForms_dz_15.05\WinForms_dz_15.05\bin\Debug\WinForms_dz_15.05.pdb
+D:\С.РПО.18.2 Романенко Вероника\WinForms\WinForms_dz_15.05\WinForms_dz_15.05\WinForms_dz_15.05\obj\Debug\WinForms_dz_15.05.csprojResolveAssemblyReference.cache
+D:\С.РПО.18.2 Романенко Вероника\WinForms\WinForms_dz_15.05\WinForms_dz_15.05\WinForms_dz_15.05\obj\Debug\WinForms_dz_15._05.Form1.resources
+D:\С.РПО.18.2 Романенко Вероника\WinForms\WinForms_dz_15.05\WinForms_dz_15.05\WinForms_dz_15.05\obj\Debug\WinForms_dz_15._05.Properties.Resources.resources
+D:\С.РПО.18.2 Романенко Вероника\WinForms\WinForms_dz_15.05\WinForms_dz_15.05\WinForms_dz_15.05\obj\Debug\WinForms_dz_15._05.Redactor.resources
+D:\С.РПО.18.2 Романенко Вероника\WinForms\WinForms_dz_15.05\WinForms_dz_15.05\WinForms_dz_15.05\obj\Debug\WinForms_dz_15.05.csproj.GenerateResource.Cache
+D:\С.РПО.18.2 Романенко Вероника\WinForms\WinForms_dz_15.05\WinForms_dz_15.05\WinForms_dz_15.05\obj\Debug\WinForms_dz_15.05.exe
+D:\С.РПО.18.2 Романенко Вероника\WinForms\WinForms_dz_15.05\WinForms_dz_15.05\WinForms_dz_15.05\obj\Debug\WinForms_dz_15.05.pdb
+D:\С.РПО.18.2 Романенко Вероника\WinForms\WinForms_dz_15.05\WinForms_dz_15.05\WinForms_dz_15.05\obj\Debug\WinForms_dz_15._05.Spisok.resources
