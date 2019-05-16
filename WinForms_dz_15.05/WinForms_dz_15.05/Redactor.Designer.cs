@@ -37,7 +37,7 @@
             this.txbIma = new System.Windows.Forms.TextBox();
             this.txbOtchestvo = new System.Windows.Forms.TextBox();
             this.txbMestoRoschden = new System.Windows.Forms.TextBox();
-            this.txbData = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -113,19 +113,19 @@
             this.txbMestoRoschden.Size = new System.Drawing.Size(200, 20);
             this.txbMestoRoschden.TabIndex = 8;
             // 
-            // txbData
+            // dateTimePicker1
             // 
-            this.txbData.Location = new System.Drawing.Point(152, 165);
-            this.txbData.Name = "txbData";
-            this.txbData.Size = new System.Drawing.Size(200, 20);
-            this.txbData.TabIndex = 9;
+            this.dateTimePicker1.Location = new System.Drawing.Point(152, 162);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 10;
             // 
             // Redactor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 261);
-            this.Controls.Add(this.txbData);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txbMestoRoschden);
             this.Controls.Add(this.txbOtchestvo);
             this.Controls.Add(this.txbIma);
@@ -153,6 +153,6 @@
         public System.Windows.Forms.TextBox txbIma;
         public System.Windows.Forms.TextBox txbOtchestvo;
         public System.Windows.Forms.TextBox txbMestoRoschden;
-        public System.Windows.Forms.TextBox txbData;
+        public System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

@@ -29,7 +29,7 @@ namespace WinForms_dz_15._05
                 txbFamilia.Text = tmp[0];
                 txbIma.Text = tmp[1];
                 txbOtchestvo.Text = tmp[2];
-                txbData.Text = tmp[3];
+                dateTimePicker1.Text = tmp[3];
                 txbMestoRoschden.Text = tmp[4];
             }
             catch (Exception ex)

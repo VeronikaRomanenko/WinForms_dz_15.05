@@ -26,7 +26,8 @@ namespace WinForms_dz_15._05
             {
                 foreach (string item in listWorkers)
                 {
-                    listBox1.Items.Add(File.ReadAllText(item));
+                    string[] tmp = File.ReadAllLines(item);
+                    listBox1.Items.Add(tmp[0] + "\t" + tmp[1] + "\t" + tmp[2] + "\t" + tmp[3] + "\t" + tmp[4]);
                 }
             }
             catch (Exception ex)
