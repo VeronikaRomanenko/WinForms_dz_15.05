@@ -38,6 +38,8 @@
             this.txbOtchestvo = new System.Windows.Forms.TextBox();
             this.txbMestoRoschden = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txbDataSozdania = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -91,6 +93,9 @@
             this.txbFamilia.Name = "txbFamilia";
             this.txbFamilia.Size = new System.Drawing.Size(200, 20);
             this.txbFamilia.TabIndex = 5;
+            this.txbFamilia.DragDrop += new System.Windows.Forms.DragEventHandler(this.txbFamilia_DragDrop);
+            this.txbFamilia.DragEnter += new System.Windows.Forms.DragEventHandler(this.txbFamilia_DragEnter);
+            this.txbFamilia.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txbFamilia_MouseDown);
             // 
             // txbIma
             // 
@@ -98,6 +103,9 @@
             this.txbIma.Name = "txbIma";
             this.txbIma.Size = new System.Drawing.Size(200, 20);
             this.txbIma.TabIndex = 6;
+            this.txbIma.DragDrop += new System.Windows.Forms.DragEventHandler(this.txbIma_DragDrop);
+            this.txbIma.DragEnter += new System.Windows.Forms.DragEventHandler(this.txbIma_DragEnter);
+            this.txbIma.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txbIma_MouseDown);
             // 
             // txbOtchestvo
             // 
@@ -105,6 +113,9 @@
             this.txbOtchestvo.Name = "txbOtchestvo";
             this.txbOtchestvo.Size = new System.Drawing.Size(200, 20);
             this.txbOtchestvo.TabIndex = 7;
+            this.txbOtchestvo.DragDrop += new System.Windows.Forms.DragEventHandler(this.txbOtchestvo_DragDrop);
+            this.txbOtchestvo.DragEnter += new System.Windows.Forms.DragEventHandler(this.txbOtchestvo_DragEnter);
+            this.txbOtchestvo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txbOtchestvo_MouseDown);
             // 
             // txbMestoRoschden
             // 
@@ -112,6 +123,9 @@
             this.txbMestoRoschden.Name = "txbMestoRoschden";
             this.txbMestoRoschden.Size = new System.Drawing.Size(200, 20);
             this.txbMestoRoschden.TabIndex = 8;
+            this.txbMestoRoschden.DragDrop += new System.Windows.Forms.DragEventHandler(this.txbMestoRoschden_DragDrop);
+            this.txbMestoRoschden.DragEnter += new System.Windows.Forms.DragEventHandler(this.txbMestoRoschden_DragEnter);
+            this.txbMestoRoschden.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txbMestoRoschden_MouseDown);
             // 
             // dateTimePicker1
             // 
@@ -120,11 +134,30 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 10;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 266);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(84, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Дата создания";
+            // 
+            // txbDataSozdania
+            // 
+            this.txbDataSozdania.Location = new System.Drawing.Point(152, 263);
+            this.txbDataSozdania.Name = "txbDataSozdania";
+            this.txbDataSozdania.ReadOnly = true;
+            this.txbDataSozdania.Size = new System.Drawing.Size(200, 20);
+            this.txbDataSozdania.TabIndex = 12;
+            // 
             // Redactor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 261);
+            this.ClientSize = new System.Drawing.Size(371, 295);
+            this.Controls.Add(this.txbDataSozdania);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txbMestoRoschden);
             this.Controls.Add(this.txbOtchestvo);
@@ -137,6 +170,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Redactor";
             this.Text = "Redactor";
+            this.Load += new System.EventHandler(this.Redactor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +188,7 @@
         public System.Windows.Forms.TextBox txbOtchestvo;
         public System.Windows.Forms.TextBox txbMestoRoschden;
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TextBox txbDataSozdania;
     }
 }

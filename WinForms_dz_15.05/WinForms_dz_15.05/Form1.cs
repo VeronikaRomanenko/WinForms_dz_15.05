@@ -19,6 +19,19 @@ namespace WinForms_dz_15._05
             InitializeComponent();
             IsMdiContainer = true;
             workers = new List<string>();
+            this.FormClosing += Form1_FormClosing;
+            workers.AddRange(File.ReadAllLines("serializ.txt"));
+            foreach (string item in workers)
+            {
+                Redactor form = new Redactor(item);
+                form.MdiParent = this;
+                form.Show();
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            File.WriteAllLines("serializ.txt", workers);
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -95,8 +108,21 @@ namespace WinForms_dz_15._05
             try
             {
                 File.Delete((this.ActiveMdiChild as Redactor).FileName);
-                this.ActiveMdiChild.Close();
                 workers.Remove((this.ActiveMdiChild as Redactor).FileName);
+                this.ActiveMdiChild.Close();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                workers.Remove((this.ActiveMdiChild as Redactor).FileName);
+                this.ActiveMdiChild.Close();
             }
             catch (Exception ex)
             {
